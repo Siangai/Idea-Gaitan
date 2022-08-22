@@ -402,4 +402,12 @@
 .formulario textarea{
     border: #000 1px solid;
 }
+@media screen and (max-width:380px) {
+    .formulario input{
+        max-width: 220px;
+    }
+    .formulario textarea{
+        max-width: 220px;
+    }
+}
 /* Contacto ends */
