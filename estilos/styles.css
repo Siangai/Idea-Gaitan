@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-evenly !important;
     color: #808080;
+    font-size: 22px;
 }
 .navbar li a{ 
     color: #fff !important;
@@ -16,14 +17,13 @@
 }
 
 .piedepagina{
-    background-color: #EFC88B;
     font-size: 30px;
-    padding: 0px;
     text-align: center;
     color: #fff;
 }
 .piedepagina p{
     text-shadow: 0px 0px 2px #fff;
+    margin-bottom: 5px;
 }
 .piedepagina i{
     letter-spacing: 20px;
@@ -381,11 +381,25 @@
 /* Galería ends */
 /* Contacto start */
 .cuerpo-formulario{
-    height: 100vh;
-    background-image: url(../multimedia/perro.jpg);
+    background-image: url(/multimedia/Libro.jpg);
+    background-position: bottom;
     background-size: cover;
     background-position: bottom;
     font-size: 30px;
     padding: 10px;
+}
+.formulario{
+    border-radius: 20px;
+    background-color: rgb(128, 128, 128,0.4);
+    max-width: 400px;
+    color: #000;
+    padding: 5px 15px;
+}
+.formulario input{
+    border: #000 2px solid;
+    width: max-content;
+}
+.formulario textarea{
+    border: #000 1px solid;
 }
 /* Contacto ends */
