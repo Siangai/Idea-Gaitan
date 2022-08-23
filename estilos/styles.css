@@ -6,14 +6,16 @@
 .navbar-nav{
     /* width: 100%; */
     padding: 5px;
-    display: flex;
     justify-content: space-evenly !important;
     color: #808080;
+    border-radius: 50px;
     font-size: 22px;
+    margin: 5px;
 }
 .navbar li a{ 
     color: #fff !important;
     text-shadow: 0px 0px 2px #fff;
+
 }
 .navbar li a:hover{
     transform: scale(1.1);
@@ -179,11 +181,15 @@
 } 
 /* Servicios ends */
 /* Galería start */
+.container-fluid{
+    background-color: #474554;
+    max-width: 100%;
+}
 .galeria{
     background-color: #474554;
     height: auto;
     font-size: 20px;
-    padding: 2px;
+    padding: 20px;
 }
 .galeria h2{
     color: #fff;
@@ -192,194 +198,59 @@
     text-shadow: 0px 0px 2px #fff;
     background-color: #474554;
     width: 120px;
-    padding: 2px 8px;
-    margin: 20px 25px;
     border-radius: 8px;
     margin-bottom: 10px;
-
 }
-.contenedor{
-    height: auto;
-    width: 98vw;
-    background-color: #474554;
-    display: inline-block;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 200px);
-    gap: 20px;
-    padding: 20px;
-    grid-template-areas:    "img1"; */
-
+.row{
+    justify-content: space-around;
 }
-.items{
+.img-galeria{
+    background-color: #808080;
+    height: 300px;
+    max-width: 100vh;
+    margin: 6px 1px;
+    padding: 10px;
     border: 1px solid #000;
-    border-radius: 5px;
-    height: 340px;
     box-shadow: 1px 1px 8px #000;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
 }
-.items:active{
-    transform: scale(1.05);
-    transition: all 0.5s;
-}
-.items1{
-    grid-area: img1;
+.img1{
     background-image: url(../multimedia/Entregado.jpg);
-    background-size: cover;
-    background-position: center;
 }
-.items2{
-    grid-area: img2;
-    background-image: url(../multimedia/ave.jpg);
-    background-size: cover;
-    background-position: top;
-}
-.items3{
-    grid-area: img3;
-    background-image: url(../multimedia/Des-concierto.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.items4{
-    grid-area: img4;
-    background-image: url(../multimedia/caballo.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.items5{
-    grid-area: img5;
-    background-image: url(../multimedia/cisnes.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.items6{
-    grid-area: img6;
-    background-image: url(../multimedia/multimedia.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.items7{
-    grid-area: img7;
-    background-image: url(../multimedia/Juro..jpg);
-    background-size: cover;
-    background-position: top;
-}
-.items8{
-    grid-area: img8;
+.img2{
     background-image: url(../multimedia/Enigma.jpg);
-    background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
-
-@media only screen and (min-width:420px) and (max-width:559px){
-    .contenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(5, 200px);
-        gap: 20px;
-        padding: 20px;
-        grid-template-areas: "img1 img1 img2"
-                             "img3 img3 img3"
-                             "img4 img4 img7"
-                             "img6 img6 img5"
-                             "img8 img8 img5";
-    }
-    .items{
-        height: 200px;
-    }
-    .items8{
-        background-position: bottom;
-    }
+.img3{
+    background-image: url(../multimedia/cisnes.jpg);
+    background-position: top;
 }
-@media only screen and (min-width:560px) and (max-width:699px){
-    .contenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(5, 200px);
-        gap: 20px;
-        padding: 20px;
-        grid-template-areas: "img1 img1 img2"
-                             "img3 img3 img2"
-                             "img4 img4 img7"
-                             "img6 img6 img5"
-                             "img8 img8 img5";
-    }
-    .items{
-        height: 200px;
-    }
-    .items2{
-        height: 420px;
-    }
-    .items5{
-        height: 420px;
-    }
-    .items8{
-        background-position: bottom;
-    }
+.img4{
+    background-image: url(../multimedia/Des-concierto.jpg)
 }
-@media only screen and (min-width:700px){
-    .contenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
-        gap: 20px;
-        padding: 20px;
-        grid-template-areas: "img1 img8 img8 img5"
-                             "img3 img3 img6 img5"
-                             "img4 img4 img2 img7"
-                             "img4 img4 img2 img7"
-                             /* "img6 img6 img5"
-                             "img8 img8 img5"; */
-    }
-    .items{
-        height: 200px;
-    }
-    .items:hover{
-    transform: scale(1.05);
-    transition: all 0.5s;
-    }
-    .items2{
-        height: 250px;
-    }
-    .items4{
-        height: 400px;
-    }
-    .items5{
-        height: 290px;
-    }
-    .items7{
-        height: 250px;
-    }
-    .items8{
-        background-position: bottom;
-    }
+.img5{
+    background-image: url(../multimedia/aves.jpg)
 }
-@media only screen and (min-width:1070px){
-    .contenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
-        gap: 20px;
-        padding: 20px;
-        grid-template-areas: "img1 img8 img8 img5"
-                             "img3 img3 img6 img5"
-                             "img4 img4 img2 img7"
-                             "img4 img4 img2 img7"
-    }
-    
-    .items2{
-        height: 400px;
+.img6{
+    background-image: url(../multimedia/caballo.jpg)
+}
+.img7{
+    background-image: url(../multimedia/ave.jpg);
+    background-position: top;
+}
+.img8{
+    background-image: url(../multimedia/Juro..jpg);
+    background-position: 0px -46px;
+}
+@media screen and (min-width: 768px) {
+    .img8{
         background-position: top;
     }
-    .items5{
-        height: 420px;
-    }
-    .items7{
-        height: 400px;
-    }
-    .items8{
-        width: 500px;
-    }
 }
+
+
 
 
 /* Galería ends */
