@@ -279,7 +279,7 @@ span{
 }
 @media screen and (max-width:380px) {
     .formulario input{
-        max-width: 200px;
+        width: 200px;
     }
     .formulario textarea{
         max-width: 200px;
