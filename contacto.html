@@ -43,33 +43,41 @@
         </nav>
     <!-- Navbar finaliza -->
     </header>
-    <div class="cuerpo-formulario">
-        <form class="formulario" action="" method="post" >
-            <h2>Formulario</h2>
-            <span>Datos del cliente</span>
-            <label for="nombre" class="fondo">Nombre</label>
-            <input type="text" name="nombre"><br>
-            <label for="apellido" class="fondo">Apellido</label>
-            <input type="text" name="apellido"><br>
-            <label for="correo" class="fondo">Correo</label>
-            <input type="email" name="correo"><br>
-            <label for="mayor" class="fondo">Mayor de 18 años</label>
-            <input type="checkbox" name="mayor"><br><br>
-            
-            <span>Evento para el que se contrata</span>
-            <select name="servicios" id="" class="fondo">
-                <option value="casamiento">Casamiento</option>
-                <option value="bautismo">Bautismo</option>
-                <option value="cumpleaños">Cumpleaños</option>
-                <option value="book de fotos">Book de fotos</option>
-                <option value="otro">Otro</option>
-            </select><br><br>
-            <label for="especifique" class="fondo">Especifique</label><br>
-            <textarea name="especifique"></textarea><br>
-            <input type="reset" value="Borrar datos" class="fondo">
-            <input type="submit" value="Enviar" class="fondo">
-        </form>
-    </div>
+    <section class="cuerpo-contacto">
+        <div class="row my-5">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <form action="" method="post" class="formulario">
+                <h3 class="display-5  text-center my-3 titulo-form">Datos del usuario</h3>
+                <div class="form-group">
+                    <label for="">Nombre:</label>
+                    <input type="text" placeholder="Introduzca su nombre" name="nombre" id="nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Apellido:</label>
+                    <input type="text" placeholder="Introduzca su apellido" name="apellido" id="apellido" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Numero de contacto</label>
+                    <input type="number" placeholder="Introduzca su numero" name="numero" id="nunero" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Servicio deseado</label>
+                        <select name="servicio" id="servicio" class="form-control">
+                            <option value="casamiento">Casamiento</option>
+                            <option value="book particular">Book particular</option>
+                            <option value="book de 15">Book de 15</option>
+                            <option value="show">Show</option>
+                            <option value="book grupal">Book grupal</option>
+                        </select>
+                </div>
+                <div class="form-group botones">
+                    <button type="submit" class="btn boton boton1">Enviar</button>
+                    <a href="" class="btn boton">Limpiar</a>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
     <footer class="piedepagina bg-dark">
         <p>Todos los derechos reservados por copyright</p>
         <div>
