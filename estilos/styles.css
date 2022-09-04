@@ -272,6 +272,9 @@
 .boton{
     text-shadow: 2px 2px 4px #474554;
 }
+.boton{
+    margin-bottom: 5px;
+}
 @media  screen and (min-width:330px) {
     .boton1{
         margin: 0px 48px;
