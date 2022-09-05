@@ -82,10 +82,10 @@
   box-shadow: 1px 1px 8px #000;
   border-radius: 5px;
   font-size: 23px;
-  color: #cf5c36;
+  color: #CF5C36;
   text-shadow: 1px 1px 5px #000;
 }
-.item:active {
+.item :active {
   transform: scale(1.05);
   transition: all 0.5s;
 }
@@ -156,7 +156,7 @@
   .item {
     filter: grayscale(100%);
   }
-  .item:hover {
+  .item :hover {
     transform: scale(1.03);
     transition: all 0.5s;
     filter: grayscale(0%);
@@ -237,7 +237,7 @@
 /* Fin GALERIA */
 /* Comienzo CONTACTO */
 .cuerpo-contacto {
-  background-image: url(../multimedia/Libro.jpg);
+  background-image: url(/multimedia/Libro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -256,13 +256,13 @@
 }
 
 .btn {
-  background-color: #cf5c36;
+  background-color: #CF5C36;
   font-weight: bold;
   color: #fff;
 }
 
 .titulo-form {
-  color: #cf5c36;
+  color: #CF5C36;
   text-shadow: 2px 2px 2px #000;
 }
 
