@@ -237,7 +237,7 @@
 /* Fin GALERIA */
 /* Comienzo CONTACTO */
 .cuerpo-contacto {
-  background-image: url(./multimedia/Libro.jpg);
+  background-image: url(../multimedia/Libro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
