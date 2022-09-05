@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* MAP */
+/* MAP */
 .navbar-nav {
   padding: 5px;
   justify-content: space-evenly !important;
@@ -22,7 +24,6 @@
 }
 
 .container-fluid {
-  background-color: #474554;
   max-width: 100%;
 }
 
@@ -74,8 +75,7 @@
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
-.item {
+.servicios .item {
   background-color: #474554;
   border: #000 solid 1px;
   width: 100%;
@@ -85,38 +85,33 @@
   color: #CF5C36;
   text-shadow: 1px 1px 5px #000;
 }
-.item :active {
+.servicios .item:active {
   transform: scale(1.05);
   transition: all 0.5s;
 }
-
-.item1 {
+.servicios .item1 {
   background-image: url(../multimedia/casamiento.jpg);
   background-size: cover;
   background-position: center;
   text-align: end;
 }
-
-.item2 {
+.servicios .item2 {
   background-image: url(../multimedia/particular.jpg);
   background-size: cover;
   background-position: center;
   text-align: end;
 }
-
-.item3 {
+.servicios .item3 {
   background-image: url(../multimedia/15.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.item4 {
+.servicios .item4 {
   background-image: url(../multimedia/show.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.item5 {
+.servicios .item5 {
   background-image: url(../multimedia/grupal.jpg);
   background-size: cover;
   background-position: center;
@@ -156,7 +151,7 @@
   .item {
     filter: grayscale(100%);
   }
-  .item :hover {
+  .item:hover {
     transform: scale(1.03);
     transition: all 0.5s;
     filter: grayscale(0%);

@@ -4,47 +4,53 @@
     box-sizing: border-box;
 }
 
-$color1: #fff;
-$color2: #474554;
-$color3: #808080;
+/* MAP */
+$colors: (
+    "blanco": #fff,
+    "negro": #000,
+    "gris-claro": #808080,
+    "gris-oscuro": #474554,
+    "naranja": #CF5C36,
+);
+
+/* MAP */
 
 .navbar-nav{
     padding: 5px;
     justify-content: space-evenly !important;
-    color: $color1 !important;
+    color: map-get($colors, "blanco") !important;
     border-radius: 50px;
     font-size: 22px;
     margin: 5px;
     li a{
-        color: $color1 !important;
-        text-shadow: 0px 0px 2px $color1;
-    }
-    li a:hover{
-        transform: scale(1.1);
-        transition: all 0.4s;
+        color: map-get($colors, "blanco") !important;
+        text-shadow: 0px 0px 2px map-get($colors, "blanco");
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.4s;
+        }
     }
 }
 .container-fluid{
-    background-color: $color2;
     max-width: 100%;
 }  
 .piedepagina{
     font-size: 30px;
     text-align: center;
-    color: $color1;
+    color: map-get($colors, "blanco");
     p{
-        text-shadow: 0px 0px 2px $color1;
+        text-shadow: 0px 0px 2px map-get($colors, "blanco");
         margin-bottom: 5px;
     }
     i{
         letter-spacing: 20px;
         font-size: 45px;
-        color: $color1;
+        color: map-get($colors, "blanco");
         margin-bottom: 4px;
-    }
-    i:hover{
-        transform: scale(1.1);
-        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
     }
 }
 
@@ -62,7 +68,7 @@ $color3: #808080;
 
 /* Comienzo servicios */
 .cuerpo-servicios{
-    background-color: #474554;
+    background-color: map-get($colors, "gris-oscuro");
     height: auto;
     padding: 20px;
     font-size: 20px;
@@ -71,54 +77,56 @@ $color3: #808080;
 .servicios{
     width: 100%;
     height: auto;
-    background-color: #474554;
+    background-color: map-get($colors, "gris-oscuro");
     display: grid;
     padding: 20px;
     grid-template-rows: repeat(5, 200px);
     grid-template-columns: 1fr;
     gap: 20px;
-}
-.item{
-    background-color: #474554;
-    border: #000 solid 1px ;
-    width: 100%;
-    box-shadow: 1px 1px 8px #000;
-    border-radius: 5px;
-    font-size: 23px;
-    color: #CF5C36;
-    text-shadow: 1px 1px 5px #000;
-    :active{
-        transform: scale(1.05);
-        transition: all 0.5s;
-    }
-}
 
-.item1{
-    background-image: url(../multimedia/casamiento.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: end;
-}
-.item2{
-    background-image: url(../multimedia/particular.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: end;
-}
-.item3{
-    background-image: url(../multimedia/15.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item4{
-    background-image: url(../multimedia/show.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item5{
-    background-image: url(../multimedia/grupal.jpg);
-    background-size: cover;
-    background-position: center;
+    .item{
+        background-color: map-get($colors, "gris-oscuro");
+        border: map-get($colors, "negro") solid 1px ;
+        width: 100%;
+        box-shadow: 1px 1px 8px map-get($colors, "negro");
+        border-radius: 5px;
+        font-size: 23px;
+        color: map-get($colors, "naranja");
+        text-shadow: 1px 1px 5px map-get($colors, "negro");
+        &:active{
+            transform: scale(1.05);
+            transition: all 0.5s;
+        }
+    }
+    
+    .item1{
+        background-image: url(../multimedia/casamiento.jpg);
+        background-size: cover;
+        background-position: center;
+        text-align: end;
+    }
+    .item2{
+        background-image: url(../multimedia/particular.jpg);
+        background-size: cover;
+        background-position: center;
+        text-align: end;
+    }
+    .item3{
+        background-image: url(../multimedia/15.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item4{
+        background-image: url(../multimedia/show.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item5{
+        background-image: url(../multimedia/grupal.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
 }
 
 @media only screen and (min-width:500px) and (max-width:579px){
@@ -149,14 +157,14 @@ $color3: #808080;
         grid-template-rows: repeat(2, 200px);
     }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1024px) {
     .servicios{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(2, 300px);
     }
     .item{
         filter: grayscale(100%);
-        :hover{
+        &:hover{
             transform: scale(1.03);
             transition: all 0.5s;
             filter: grayscale(0%);
@@ -167,11 +175,11 @@ $color3: #808080;
 
 /* Comienzo GALERIA */
 .container-fluid{
-    background-color: #474554;
+    background-color: map-get($colors, "gris-oscuro");
     max-width: 100%;
 }
 .galeria{
-    background-color: #474554;
+    background-color: map-get($colors, "gris-oscuro");
     height: auto;
     font-size: 20px;
     padding: 30px 20px;
@@ -180,13 +188,13 @@ $color3: #808080;
     justify-content: space-around;
 }
 .img-galeria{
-    background-color: #808080;
+    background-color: map-get($colors, "gris-claro");
     height: 350px;
     max-width: 100vh;
     margin: 6px 1px;
     padding: 10px;
-    border: 1px solid #000;
-    box-shadow: 1px 1px 8px #000;
+    border: 1px solid map-get($colors, "negro");
+    box-shadow: 1px 1px 8px map-get($colors, "negro");
     border-radius: 5px;
     background-position: center;
     background-size: cover;
@@ -249,21 +257,21 @@ $color3: #808080;
     box-shadow: inset 1px 1px 15px 3px rgba(0, 0, 0, 0.6);
 }
 .btn{
-    background-color: #CF5C36;
+    background-color: map-get($colors, "naranja");
     font-weight: bold;
-    color: #fff;
+    color: map-get($colors, "blanco");
 }
 .titulo-form{
-    color: #CF5C36;
-    text-shadow: 2px 2px 2px #000;
+    color: map-get($colors, "naranja");
+    text-shadow: 2px 2px 2px map-get($colors, "negro");
 }
 .form-group{
-    color: #000;
-    text-shadow: 1px 1px 4px #474554;
+    color: map-get($colors, "negro");
+    text-shadow: 1px 1px 4px map-get($colors, "gris-oscuro");
 }
 .boton{
     margin-bottom: 5px;
-    text-shadow: 2px 2px 4px #474554;
+    text-shadow: 2px 2px 4px map-get($colors, "gris-oscuro");
 }
 @media  screen and (min-width:330px) {
     .boton1{
