@@ -6,6 +6,8 @@
 
 /* MAP */
 /* MAP */
+/* MIXINS */
+/* MIXINS */
 .navbar-nav {
   padding: 5px;
   justify-content: space-evenly !important;
@@ -23,8 +25,8 @@
   transition: all 0.4s;
 }
 
-.container-fluid {
-  max-width: 100%;
+.container-fluid, .carousel-item img {
+  width: 100%;
 }
 
 .piedepagina {
@@ -47,17 +49,13 @@
   transition: all 0.5s;
 }
 
-/* Comienzo index */
+/* Comienzo INDEX */
 .carousel-item {
   max-height: 100vh;
   width: 100%;
 }
-.carousel-item img {
-  width: 100%;
-}
-
-/* Fin index */
-/* Comienzo servicios */
+/* Fin INDEX */
+/* Comienzo SERVICIOS */
 .cuerpo-servicios {
   background-color: #474554;
   height: auto;
@@ -66,8 +64,8 @@
 }
 
 .servicios {
-  width: 100%;
   height: auto;
+  width: 100%;
   background-color: #474554;
   display: grid;
   padding: 20px;
@@ -78,10 +76,11 @@
 .servicios .item {
   background-color: #474554;
   border: #000 solid 1px;
+  font-weight: bold;
   width: 100%;
   box-shadow: 1px 1px 8px #000;
   border-radius: 5px;
-  font-size: 23px;
+  font-size: 22px;
   color: #CF5C36;
   text-shadow: 1px 1px 5px #000;
 }
@@ -152,6 +151,7 @@
     filter: grayscale(100%);
   }
   .item:hover {
+    text-shadow: 1px 1px 4px #000;
     transform: scale(1.03);
     transition: all 0.5s;
     filter: grayscale(0%);
@@ -159,7 +159,7 @@
 }
 /* Fin SERVICIOS */
 /* Comienzo GALERIA */
-.container-fluid {
+.container-fluid, .carousel-item img {
   background-color: #474554;
   max-width: 100%;
 }
@@ -254,21 +254,22 @@
   background-color: #CF5C36;
   font-weight: bold;
   color: #fff;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px #474554;
 }
 
-.titulo-form {
+.titulo-form, .form-group {
   color: #CF5C36;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 3px #000;
 }
 
 .form-group {
-  color: #000;
-  text-shadow: 1px 1px 4px #474554;
+  font-size: 18px;
 }
-
-.boton {
-  margin-bottom: 5px;
-  text-shadow: 2px 2px 4px #474554;
+.form-group .campo-form {
+  color: #474554;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 330px) {
