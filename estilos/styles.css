@@ -56,7 +56,13 @@
 }
 @media only screen and (min-width: 200px) and (max-width: 450px) {
   .navbar-index {
-    min-height: 200px;
+    height: 20vh;
+  }
+  .carousel {
+    height: 40vh;
+  }
+  .piedepagina-index {
+    height: 40vh;
   }
 }
 /* Fin INDEX */
